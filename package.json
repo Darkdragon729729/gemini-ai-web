@@ -1,0 +1,13 @@
+{
+  "name": "gemini-ai-web",
+  "version": "1.0.0",
+  "description": "AI Website using Node.js and Gemini API on Netlify",
+  "main": "index.js",
+  "dependencies": {
+    "@google/genai": "latest",
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
