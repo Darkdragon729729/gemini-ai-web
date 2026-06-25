@@ -18,7 +18,7 @@ async function appendMessage() {
 
     try {
         // Call the Netlify Serverless Function
-        const response = await fetch('/.netlify/functions/ai-bridge', {
+        const response = await fetch('/.netlify/functions/api', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ prompt: prompt })
