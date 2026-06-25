@@ -17,12 +17,15 @@ async function appendMessage() {
     const loadingId = displayMessage('Thinking...', 'ai');
 
     try {
-        // Call the Netlify Serverless Function
-        const response = await fetch('/.netlify/functions/api', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ prompt: prompt })
-        });
+        // Change this from 'http://localhost:3000/api' to Netlify's local function path:
+const response = await fetch('/.netlify/functions/api', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({ message: userInput })
+});
+
         
         const data = await response.json();
         
