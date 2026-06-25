@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "AI Website using Node.js and Gemini API on Netlify",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "@google/genai": "latest",
     "@google/generative-ai": "^0.24.1",
